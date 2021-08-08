@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-top">
+          <a href="#home"><img src="logo.png" /></a>
+          <div class="text">
+            <span style="color: #ff9d1d;">N</span>
+            <span>a</span>
+            <span>v</span>
+            <span>e</span>
+            <span>e</span>
+            <span>n</span>
+          </div>
+  
+          <p>Web Developer</p>
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    <section class="skills" id="skills">
+      <audio id="song" src="song-main.mp3"></audio>
+        <div class="sound"> 
+          <i class="fas fa-music"></i>
+          <span>Sound</span>
+          <button id="btn" onclick="togglePlay()">OFF  </button>
+        </div>
+        <a href="index.html"><span>&#8592;</span>Back to Home</a>
+        <div class="title">
+          <span  style="color: #ff9d1d;">S</span>
+          <span>k</span>
+          <span >i</span>
+          <span>l</span>
+          <span style="color: #ff9d1d;">l</span>
+          <span>s</span>
+          <span style="margin-right: 2rem;"></span>
+          <span>&</span>
+          <span style="margin-right: 2rem;"></span>
+          <span>E</span>
+          <span style="color: #ff9d1d;">x</span>
+          <span >p</span>
+          <span >e</span>
+          <span style="color: #ff9d1d;">r</span>
+          <span >i</span>
+          <span style="color: #ff9d1d;">e</span>
+          <span >n</span>
+          <span >c</span>
+          <span style="color: #ff9d1d;">e</span>
+        </div>      
+        <div class="info">
+          <p>Since beginning my journey as a <span style="color: #ff9d1d;">Junior developer</span> nearly 1 years ago, I’ve done a lot work for Gaining Experience, consulted for startups, and collaborated with talented people to create web products for both business and consumer use.
+          </p><br><br>
+          <p>
+            I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
+          </p><br><br>
+        </div>
+        <div class="skills-bar">
+          <div class="all">
+            <li>
+              <h2>HTML</h2>
+              <span class="bar">
+                <span class="html"></span>
+              </span>
+            </li>
+            <li>
+              <h2>CSS</h2>
+              <span class="bar">
+                <span class="css"></span>
+              </span>
+            </li>
+            <li>
+              <h2>JAVASCRIPT</h2>
+              <span class="bar">
+                <span class="javascript"></span>
+              </span>
+            </li>
+            <li>
+              <h2>PYTHON</h2>
+              <span class="bar">
+                <span class="python"></span>
+              </span>
+            </li>
+
+          </div>
+       
+        </div>
+        
+      </section>
+  
+    <!----------- SCRIPT-------------- -->
+    <script>
+      var audio = document.getElementById("song");
+      var isPlaying = false;
+      var btn= document.getElementById("btn");
+
+      function togglePlay() {
+        isPlaying ? song.pause() : song.play();
+
+        if(btn.innerText === "OFF"){
+          btn.innerText = "ON";
+        }else{
+          btn.innerText= "OFF";
+        }
+      }
+
+      song.onplaying = function () {
+        isPlaying = true;
+      };
+      song.onpause = function () {
+        isPlaying = false;
+      };
+    
+    </script>
+    
+</body>
+</html>

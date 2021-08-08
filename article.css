@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+
+:root {
+  --font: "La Belle Aurore", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.sidebar {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+.sidebar .menu-top {
+  height: 26%;
+  border-bottom: 1px solid;
+  background-color: black;
+}
+.menu-top .text {
+  display: flex;
+  justify-content: center;
+}
+.menu-top a img {
+  width: 100%;
+  margin-top: -18%;
+}
+.menu-top a img:hover {
+  animation: animate 0.7s ease-in-out;
+}
+.menu-top .text span {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-top: -10%;
+}
+.menu-top .text span:hover {
+  color: #ff9d1d;
+  animation: animate 0.7s ease-in-out;
+}
+
+.menu-top p {
+  color: #909096;
+  font-size: 1.5rem;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  margin-top: 10%;
+  font-style: italic;
+}
+
+.menu-list {
+  height: 100vh;
+  border-bottom: 1px solid;
+  background: linear-gradient(to left, #1d1d1d, #000000);
+}
+.menu-list ul li {
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #494848;
+  line-height: 5rem;
+  text-align: center;
+}
+.menu-list ul li a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #909096;
+  font-family: "Poppins", sans-serif;
+}
+.menu-list ul li a:hover {
+  color: #ff9d1d;
+  font-size: 1.9rem;
+}
+.menu-list .social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu-list .social a i {
+  font-size: 1.8rem;
+  color: #909096;
+  margin: 7px;
+  margin-top: 20px;
+}
+.menu-list .social a i:hover {
+  color: #ff9d1d;
+  animation: animate 0.7s ease-in-out;
+}
+.sound {
+  display: flex;
+  position: fixed;
+  width: 9%;
+  top: 4%;
+  right: 1%;
+  background-color: black;
+  border-radius: 5px;
+  z-index: 1;
+}
+.sound i {
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  color: #ff9d1d;
+  margin-left: 5px;
+}
+.sound span {
+  display: grid;
+  place-items: center;
+  margin-left: 5%;
+  color: white;
+  font-size: 1.6rem;
+}
+.sound i:hover {
+  animation: animate 0.7s;
+}
+.sound button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ff9d1d;
+}
+.sound button:active {
+  color: #fff;
+  transform: translateY(2px);
+}
+/* -------------Articles------- */
+
+.articles {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  float: right;
+  background: linear-gradient(to left, #494848, #000000);
+}
+.articles a {
+  color: cyan;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 5rem;
+  font-family: "Poppins";
+  left: 25rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.articles a span {
+  font-size: 1.9rem;
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+.articles a:hover {
+  opacity: 0.7;
+  color: cyan;
+}
+.articles .container {
+  margin-top: 10%;
+  margin-left: 5%;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+.articles .container h1 {
+  font-size: 5rem;
+  color: #fff;
+  width: 60%;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+}
+.articles .main .title {
+  color: #ff9d1d;
+  font-weight: 600;
+  font-size: 3.2rem;
+  position: relative;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+  width: 56%;
+}
+.articles .container .main .title::before {
+  content: "<title>";
+  font-family: var(--font);
+  color: #a0a0a0;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  left: -2rem;
+  letter-spacing: 2px;
+}
+.articles .container .main .title::after {
+  content: "</title>";
+  font-family: var(--font);
+  color: #a0a0a0;
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: -1rem;
+  left: -2rem;
+  letter-spacing: 2px;
+}
+.articles .container h1::before {
+  content: "<h1>";
+  font-family: var(--font);
+  color: #a0a0a0;
+  font-size: 2rem;
+  position: absolute;
+  top: -1rem;
+  left: 0%;
+  letter-spacing: 2px;
+}
+.articles .container h1::after {
+  content: "</h1>";
+  font-family: var(--font);
+  color: #a0a0a0;
+  font-size: 2rem;
+  position: absolute;
+  left: 0%;
+  bottom: -2rem;
+  letter-spacing: 2px;
+}
+.articles .main {
+  padding: 5rem;
+}
+.articles .main .info {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  width: 56%;
+  padding: 1rem;
+}
+.articles .head {
+  font-family: sans-serif;
+  position: fixed;
+  z-index: -1;
+  font-size: 33rem;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+  right: 10rem;
+  top: 5rem;
+  font-weight: 700;
+  display: inline-flex;
+  letter-spacing: -2rem;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+@media (max-width:750px) {
+  *{
+    /* overflow-x: hidden; */
+  }
+  .sidebar{
+    display: none;
+  }
+  .articles .head  {
+    display: none;
+  }
+  .sound{
+    right: 5%;
+    width: 20%;
+  }
+  .sound span{
+    display: none;
+  }
+  .sound button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 1px;
+  }
+  .sound button:active{
+    transform: translateY(0);
+  }
+  .sound i{
+    display: none;
+
+  }
+  .articles a{
+    left: 3rem;
+    top: 3rem;
+  }
+  .articles{
+    width: 100%;
+  }
+  .articles .container h1{
+    width: 100%;
+    font-size: 2.3rem;
+    text-align: left;
+    padding: 0rem;
+    margin-top: 10rem;
+  }
+  .articles .container h1::before{
+    top: -3rem;
+  }
+ 
+  .articles .container h1::after{
+    bottom: -4rem;
+  }
+  .articles .main{
+    padding: 1rem;
+    width: 100%;
+  }
+  .articles .main .title{
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+    padding: 0rem;
+  }
+  .articles .main .title::before{
+    display: none;
+  }
+  .articles .main .title::after{
+    display: none;
+  }
+  .articles .main .info{
+    width: 100%;
+    
+    padding: 0rem;
+  }
+  .articles .main .last{
+   margin-bottom: 10rem;
+  }
+  
+}

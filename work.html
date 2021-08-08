@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-top">
+          <a href="index.html"><img src="logo.png" /></a>
+          <div class="text">
+            <span style="color: #ff9d1d;">N</span>
+            <span>a</span>
+            <span>v</span>
+            <span>e</span>
+            <span>e</span>
+            <span>n</span>
+          </div>
+  
+          <p>Web Developer</p>
+        </div>
+        <div class="menu-list">
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <section class="portfolio" id="portfolio" style="margin-top: 0;">
+
+        <audio id="song" src="song-main.mp3"></audio>
+        <div class="sound"> 
+          <i class="fas fa-music"></i>
+          <span>Sound</span>
+          <button id="btn" onclick="togglePlay()">OFF  </button>
+        </div>
+        <a href="index.html" class="back"><span>&#8592;</span>Back to Home</a>
+
+        
+        <div class="work">
+          <div class=" box box1">
+            <div class="view">
+              <a href="">View</a>
+            </div>
+          </div>
+          <div class="box box2"><div class="view">
+            <a href="">View</a>
+          </div></div>
+          <div class="box box3"><div class="view">
+            <a href="">View</a>
+          </div></div>
+          <div class="box box4"><div class="view">
+            <a href="">View</a>
+          </div></div>
+          <div class="box box5"><div class="view">
+            <a href="">View</a>
+          </div></div>
+          <div class="box box6"><div class="view">
+            <a href="">View</a>
+          </div></div>
+         
+  
+        </div>
+        
+    
+    <!----------- SCRIPT-------------- -->
+    <script>
+        var audio = document.getElementById("song");
+        var isPlaying = false;
+        var btn= document.getElementById("btn");
+  
+        function togglePlay() {
+          isPlaying ? song.pause() : song.play();
+  
+          if(btn.innerText === "OFF"){
+            btn.innerText = "ON";
+          }else{
+            btn.innerText= "OFF";
+          }
+        }
+  
+        song.onplaying = function () {
+          isPlaying = true;
+        };
+        song.onpause = function () {
+          isPlaying = false;
+        };
+      
+      </script>
+</body>
+</html>
