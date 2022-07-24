@@ -383,6 +383,8 @@ line-height: 5rem;
   font-size: 1.5rem;
   background: none;
   border: none;
+  font-weight:700;
+  margin-bottom:7px;
   color: #ff9d1d;
 }
 .sound button:active{
